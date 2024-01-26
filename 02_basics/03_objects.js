@@ -1,5 +1,6 @@
-// singleton
-// Object.create
+// Two ways to declare objects -> 1. literal ki tarah 2. constructor ki tarah
+// singleton (by constructor) -> apne tarah ka ek hi object hai
+// Object.create (singleton)
 
 // object literals
 
@@ -31,7 +32,7 @@ JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); \\ string interpolation
 }
 
 console.log(JsUser.greeting());
