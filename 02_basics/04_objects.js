@@ -18,13 +18,14 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userfullname.firstname);
+// console.log(regularUser.fullname?.userfullname.firstname) // optional chaining: ? use jab API se access krte hai toh protection ke liye ... full name exist hi nhi krta ho
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // target : {}, source : obj1, obj2, obj4
 
 const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
@@ -62,8 +63,8 @@ const course = {
 }
 
 // course.courseInstructor
-
-const {courseInstructor: instructor} = course
+// const {courseInstructor} = course // destructuring
+const {courseInstructor: instructor} = course // or if you want to give your own custom name
 
 // console.log(courseInstructor);
 console.log(instructor);
