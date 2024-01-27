@@ -1,3 +1,5 @@
+Browser mein ctrl+shift+i karke jo scope hai aur code mein node krke run scope diffrent hai
+
 //var c = 300
 let a = 300
 if (true) {
