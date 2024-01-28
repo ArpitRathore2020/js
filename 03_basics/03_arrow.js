@@ -15,6 +15,7 @@ const user = {
 
 // console.log(this);
 
+// "this" cannot access variables in function context // see below
 // function chai(){
 //     let username = "hitesh"
 //     console.log(this.username);
@@ -39,8 +40,9 @@ const chai =  () => {
 //     return num1 + num2
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2
+// const addTwo = (num1, num2) =>  num1 + num2  // return keyword is not required in this syntax. Everything should be in a single line.
 
+// It's safe to wrap it in parentheses unlike above otherwise returning the object will give undefined
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
 const addTwo = (num1, num2) => ({username: "hitesh"})
